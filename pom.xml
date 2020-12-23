@@ -96,6 +96,8 @@
             <artifactId>poi-ooxml</artifactId>
             <version>4.1.0</version>
         </dependency>
+
+        <!-- JDBC  icin eklendi-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -122,16 +124,16 @@
 
                     <includes>
                         <!-- for run class or classes -->
-                        <!-- **/:bulunduğu lokasyonu bütün klasörlere göre bulabiliyor.Jenkins icin -->
-                        <include> **/_03_TestRunnerSmoke.java</include>
+                        <!-- todo **/:bulunduğu lokasyonu bütün klasörlere göre bulabiliyor.Jenkins icin -->
+                        <include>**/_03_TestRunnerSmoke.java</include>
                     </includes>
-                    <!-- Hata versede devam et dedik -->
-                    <testFailureIgnore> true </testFailureIgnore>
+                    <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
 
         </plugins>
     </build>
+
 
     <profiles>
 
@@ -157,6 +159,8 @@
             </build>
         </profile>
 
+
+        <!-- todo Profil olusturduk. Hangi profile calistiracagimizi yazdik-Jenkins icin -->
         <profile>
             <id>Regression</id>   <!-- todo Jenkins test ismini tanimlayip aldigimiz yer-->
             <build>
@@ -169,7 +173,7 @@
                             <includes>
                                 <!-- for  run class or classes-->
                                 <!-- **/:bulunduğu lokasyonu bütün klasörlere göre bulabiliyor.Jenkins icin -->
-                                <include>**/_04_TestRunnerRegression</include>
+                                <include>**/_04_TestRunnerRegressionWithPlugin.java</include>
                             </includes>
                             <testFailureIgnore>true</testFailureIgnore>
                         </configuration>
@@ -179,5 +183,6 @@
         </profile>
 
     </profiles>
+
 
 </project>
