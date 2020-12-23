@@ -13,7 +13,10 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
         tags = {"@SmokeTest"},
         features = {"src/test/java/FeatureFiles"},
         glue = {"StepDefinitions"},
-        dryRun = false
+        dryRun = false,
+        plugin = { //basit rapor oluşturan plugin
+                "html:target/cucumber-report",
+                "json:target/cucumber.json"}
 
 )
 public class _03_TestRunnerSmoke extends AbstractTestNGCucumberTests {
