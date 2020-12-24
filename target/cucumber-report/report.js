@@ -25,7 +25,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 417800,
+  "duration": 313600,
   "status": "passed"
 });
 formatter.scenario({
@@ -89,331 +89,150 @@ formatter.match({
   "location": "_01_LoginSteps.navigate_to_website_basqar()"
 });
 formatter.result({
-  "duration": 9797071900,
+  "duration": 9555910700,
   "status": "passed"
 });
 formatter.match({
   "location": "_01_LoginSteps.enter_username_and_password_and_click_Login_button()"
 });
 formatter.result({
-  "duration": 3293933100,
+  "duration": 1220495500,
   "status": "passed"
 });
 formatter.match({
   "location": "_01_LoginSteps.user_should_login_successfully()"
 });
 formatter.result({
-  "duration": 65900,
+  "duration": 46500,
   "status": "passed"
 });
 formatter.after({
-  "duration": 4280266700,
+  "duration": 4805150000,
   "status": "passed"
 });
-formatter.uri("_02_Country.feature");
+formatter.uri("_04_CountryCreateEditDelete.feature");
 formatter.feature({
   "line": 4,
-  "name": "Country functionality",
+  "name": "Country Creat Edit Delete Functionality",
   "description": "",
-  "id": "country-functionality",
+  "id": "country-creat-edit-delete-functionality",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 221100,
-  "status": "passed"
-});
-formatter.scenario({
-  "comments": [
-    {
-      "line": 6,
-      "value": "#Senaryodaki adimlar otomatik Login.feature dan cektik"
-    }
-  ],
-  "line": 8,
-  "name": "",
-  "description": "",
-  "id": "country-functionality;",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 7,
-      "name": "@SmokeTest"
-    }
-  ]
-});
-formatter.step({
-  "line": 9,
-  "name": "Navigate to website basqar",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 10,
-  "name": "Enter username and password and click Login button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 11,
-  "name": "User should login successfully",
-  "keyword": "Then "
-});
-formatter.step({
-  "comments": [
-    {
-      "line": 12,
-      "value": "# country sayfasina git"
-    }
-  ],
-  "line": 13,
-  "name": "Navigate to country page",
-  "keyword": "And "
-});
-formatter.step({
-  "comments": [
-    {
-      "line": 14,
-      "value": "# Bir ulke creat et"
-    }
-  ],
-  "line": 15,
-  "name": "Creat a country",
-  "keyword": "When "
-});
-formatter.step({
-  "comments": [
-    {
-      "line": 16,
-      "value": "# Mesaji dogrula"
-    }
-  ],
-  "line": 17,
-  "name": "Success message should be displayed",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "_01_LoginSteps.navigate_to_website_basqar()"
-});
-formatter.result({
-  "duration": 7459930300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "_01_LoginSteps.enter_username_and_password_and_click_Login_button()"
-});
-formatter.result({
-  "duration": 3291312000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "_01_LoginSteps.user_should_login_successfully()"
-});
-formatter.result({
-  "duration": 22200,
-  "status": "passed"
-});
-formatter.match({
-  "location": "_02_CountrySteps.navigate_to_country_page()"
-});
-formatter.result({
-  "duration": 1404443800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "_02_CountrySteps.creat_a_country()"
-});
-formatter.result({
-  "duration": 1432604700,
-  "status": "passed"
-});
-formatter.match({
-  "location": "_02_CountrySteps.success_message_should_be_displayed()"
-});
-formatter.result({
-  "duration": 125798700,
-  "error_message": "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:97)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:969)\r\n\tat org.testng.Assert.assertTrue(Assert.java:43)\r\n\tat org.testng.Assert.assertTrue(Assert.java:53)\r\n\tat Pages._Parent.verifyElementContainsText(_Parent.java:85)\r\n\tat Pages.DialogContent.findElementAndFindVerifyContainsText(DialogContent.java:215)\r\n\tat StepDefinitions._02_CountrySteps.success_message_should_be_displayed(_02_CountrySteps.java:38)\r\n\tat ✽.Then Success message should be displayed(_02_Country.feature:17)\r\n",
-  "status": "failed"
-});
-formatter.after({
-  "duration": 3650434600,
-  "status": "passed"
-});
-formatter.uri("_06_Nationalities.feature");
-formatter.feature({
-  "line": 1,
-  "name": "Nationalities functionality",
-  "description": "",
-  "id": "nationalities-functionality",
-  "keyword": "Feature"
-});
-formatter.before({
-  "duration": 158200,
+  "duration": 122300,
   "status": "passed"
 });
 formatter.background({
-  "line": 3,
+  "comments": [
+    {
+      "line": 6,
+      "value": "#Senaryolarda ayni olan ilk kisimlar Background olarak yazilabilir"
+    }
+  ],
+  "line": 7,
   "name": "",
   "description": "",
   "type": "background",
   "keyword": "Background"
 });
 formatter.step({
-  "line": 4,
+  "line": 8,
   "name": "Navigate to website basqar",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 5,
+  "line": 9,
   "name": "Enter username and password and click Login button",
   "keyword": "When "
 });
 formatter.step({
-  "line": 6,
+  "line": 10,
   "name": "User should login successfully",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 7,
-  "name": "Navigate to Nationalities page",
+  "line": 11,
+  "name": "Navigate to country page",
   "keyword": "And "
 });
 formatter.match({
   "location": "_01_LoginSteps.navigate_to_website_basqar()"
 });
 formatter.result({
-  "duration": 6753026900,
+  "duration": 7334431300,
   "status": "passed"
 });
 formatter.match({
   "location": "_01_LoginSteps.enter_username_and_password_and_click_Login_button()"
 });
 formatter.result({
-  "duration": 3781587400,
+  "duration": 3818531100,
   "status": "passed"
 });
 formatter.match({
   "location": "_01_LoginSteps.user_should_login_successfully()"
 });
 formatter.result({
-  "duration": 52900,
+  "duration": 84400,
   "status": "passed"
 });
 formatter.match({
-  "location": "_06_NationalitiesSteps.navigateToNationalitiesPage()"
+  "location": "_02_CountrySteps.navigate_to_country_page()"
 });
 formatter.result({
-  "duration": 1178339000,
+  "duration": 1647827700,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 23,
-  "name": "Nationalities All functionality",
+  "line": 14,
+  "name": "Create a country",
   "description": "",
-  "id": "nationalities-functionality;nationalities-all-functionality",
+  "id": "country-creat-edit-delete-functionality;create-a-country",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 22,
-      "name": "@SmokeTest"
+      "line": 13,
+      "name": "@RegressionTest"
     }
   ]
 });
 formatter.step({
-  "line": 24,
-  "name": "Create a Nationality name as \"weblich\"",
-  "keyword": "Then "
+  "line": 15,
+  "name": "Creat a country name as \"ISS35\" and code as \"00000\"",
+  "keyword": "When "
 });
 formatter.step({
-  "line": 25,
-  "name": "Success message should be displayed",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 26,
-  "name": "User edit the  \"weblich\"  to \"weblich2\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 27,
-  "name": "Success message should be displayed",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 28,
-  "name": "User delete the \"weblich2\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 29,
+  "line": 16,
   "name": "Success message should be displayed",
   "keyword": "Then "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "weblich",
-      "offset": 30
-    }
-  ],
-  "location": "_06_NationalitiesSteps.createANationalityNameAs(String)"
-});
-formatter.result({
-  "duration": 1264852100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "_02_CountrySteps.success_message_should_be_displayed()"
-});
-formatter.result({
-  "duration": 350963700,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "weblich",
-      "offset": 16
+      "val": "ISS35",
+      "offset": 25
     },
     {
-      "val": "weblich2",
-      "offset": 30
+      "val": "00000",
+      "offset": 45
     }
   ],
-  "location": "_03_CountryCreatEditDeleteSteps.user_edit_the_to(String,String)"
+  "location": "_02_CountrySteps.creat_a_country_name_as_and_code_as(String,String)"
 });
 formatter.result({
-  "duration": 6776103300,
+  "duration": 1319715400,
   "status": "passed"
 });
 formatter.match({
   "location": "_02_CountrySteps.success_message_should_be_displayed()"
 });
 formatter.result({
-  "duration": 443502600,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "weblich2",
-      "offset": 17
-    }
-  ],
-  "location": "_03_CountryCreatEditDeleteSteps.user_delete_the(String)"
-});
-formatter.result({
-  "duration": 6491403700,
-  "status": "passed"
-});
-formatter.match({
-  "location": "_02_CountrySteps.success_message_should_be_displayed()"
-});
-formatter.result({
-  "duration": 397584700,
+  "duration": 334449600,
   "status": "passed"
 });
 formatter.after({
-  "duration": 3183812700,
+  "duration": 3180466400,
   "status": "passed"
 });
 });

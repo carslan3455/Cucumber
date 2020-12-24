@@ -10,7 +10,7 @@ Feature: Country Creat Edit Delete Functionality
     Then User should login successfully
     And Navigate to country page
 
-
+  @RegressionTest
   Scenario: Create a country
     When Creat a country name as "ISS35" and code as "00000"
     Then Success message should be displayed
