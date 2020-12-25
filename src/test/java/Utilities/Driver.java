@@ -66,6 +66,13 @@ public class Driver {
                     threadDriver.set( new FirefoxDriver());
                     break;
 
+//                default:
+//                    WebDriverManager.chromedriver().setup();
+//                    ChromeOptions options = new ChromeOptions();
+//                    options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1400,2400"); //width, height
+//                    threadDriver.set(new ChromeDriver(options));
+//                    break;
+
             }
 
         }
